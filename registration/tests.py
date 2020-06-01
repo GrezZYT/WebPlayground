@@ -10,3 +10,5 @@ class ProfileTestCase(TestCase):
     def test_profile_exists(self):
         exists = Profile.objects.filter(user__username='test').exists()
         self.assertEqual(exists, True)
+
+    
