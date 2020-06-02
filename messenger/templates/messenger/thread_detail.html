@@ -77,6 +77,7 @@
                     ScrollBottomInThread();
                     // Si el mensaje se ha creado correctamente...
                     if (data.created) {
+                      window.location.href = "{% url 'messenger:detail' thread.pk %}";
                     // Aquí iría el código de creación del mensaje dinámicamente
                     } else {
                     // Si algo ha ido mal podemos debugear en la consola del inspector
